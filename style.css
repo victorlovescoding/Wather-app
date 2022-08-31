@@ -1,4 +1,7 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 body{
@@ -9,6 +12,10 @@ body{
     flex-direction: column;
     background-color: #C1C3C5;
 
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
 }
 input{
     display: block;
@@ -34,7 +41,24 @@ input{
 }
 #img{
     display: block;
+    width: 7rem;
 }
 .weatherContainer{
     display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    #form{
+        width: 95vw;
+    }
+    #city{
+        display: block;
+        width: 95vw;
+        
+    }
 }

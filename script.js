@@ -21,7 +21,7 @@ form.addEventListener('submit',(e)=>{
       document.getElementById("img").src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     })
 })
-data.catch((error) => {
+.catch((error) => {
     alert(error)
   });
 
